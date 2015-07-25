@@ -10,11 +10,11 @@
 */
 [class*='wb'], [class*='wb-child'] > * {
 	/*solid border color(fallback)*/
-	border: 0px solid #aaa;
+	border: 0px solid #195493;
 }
 /*border widths*/
 /*all sides*/
-.wb, .wb-child > * {border-width: 2px;}
+.wb, .wb-child > * {margin: 5px; width: 60px; border-width: 2px;}
 /*single sides*/
 .wb-top, .wb-child-top > * {border-top-width: 2px;}
 .wb-right, .wb-child-right > * {border-right-width: 2px;}
@@ -35,18 +35,18 @@ a {
 	text-decoration: none; color: white;
 }
 
-.wrapper {width: 320px; margin: 50px auto; border-bottom-width: 0;}
+.wrapper {width: 320px; margin: 50px auto; border-bottom-width: 0; background-color: 195493}
 
-.black-bar {padding: 2px 4px; background: rgba(0, 0, 0, 0.25);}
+.black-bar {padding: 2px 4px; background-color: 007fff;}
 .title {padding: 19px; font-size: 25px; text-align: center;}
 
 .title-box {padding: 20px; overflow: hidden;}
-.search-input, .search-button {padding: 10px; font-size: 14px; float: left;}
+.search-input, .search-button {margin: 20px; padding: 10px; font-size: 14px; float: right;}
 
-.categories {overflow: hidden; background: rgba(0, 0, 0, 0.35);}
+.categories {overflow: hidden; background-color: 59d3f2}
 .categories a {
 	display: block; float: right; width: 50%; text-align: center;
-	font: bold 18px/50px 'Walter Turncoat';
+	font: bold 18px/50px 'Walter Turncoat'; color: 195493
 }
 
 .search-head {padding: 50px; background: rgba(0, 0, 0, 0.2);}
@@ -56,3 +56,5 @@ a {
 .search-results li {list-style-type: none; overflow: hidden; padding: 10px;}
 .thumb {height: 60px; width: 30px; float: left; margin-right: 10px; text-align: center; background: rgba(0, 0, 0, 0.15);}
 .thumb .fa {font-size: 32px; line-height: 60px; opacity: 0.15;}
+.img {margin-top: 8px; padding: 0px;}
+.button {width: 20px;}
