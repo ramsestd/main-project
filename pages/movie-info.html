@@ -2,7 +2,7 @@
 <head>
 	<title></title>
 	 <link rel="stylesheet" type="text/css" href="../assets/css/appstyles.css">
-	 <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
 </head>
 <body>
 
@@ -13,31 +13,36 @@
 	</div>
 	
 	<div class="title-box wb-bottom">
-	<div class="thumb wb"></div>
-	<div class="title">Movie Collection</div>
+		<a href="../index.html"><img src="../assets/images/playicon.png" alt="play icon logo" style="width: 50px; height: 50px;"></a>
+		<div class="title">Movie Collection</div>
 	</div>
 	
 	<div class="categories wb-bottom">
-		<a class="wb-right">New Search</a>
-		<a>Scan Barcode</a>
+		<a href="../pages/movie-info.html" class="wb-right">New Search</a>
+		<a href="../pages/barcode-info.html">Scan Barcode</a>
 	</div>
 	
-	<a href="../pages/barcode-info.html">This is a link to barcode info</a>
-
-	<div class="search-results">
-		<!-- movie listings -->
-		<div class="search-head wb-bottom">
-			<form>
-			<input type="text" class="search-input wb" placeholder="Movie Title..."/>
-			<input type="text" class="search-input wb" placeholder="Director..."/> 
-			<input type="text" class="search-input wb" placeholder="Year..."/>
-			<input type="text" class="search-input wb" placeholder="Rating..."/>
-		</form>
-		<img class="img" src="" alt="Movie Poster" height="150" width="80">
+	<div class="resultsBox">
+		<div class="search-results">
+			<!-- movie listings -->
+			<div class="search-head wb-bottom">
+				<form>
+					Movie Title:<br>
+					<input type="text" placeholder="Movie Title..."/><br>
+					<br>
+					Director:<br>
+					<input type="text" placeholder="Director..."/><br>
+					<br> 
+					Year:<br>
+					<input type="text" placeholder="Year..."/><br>
+					<br>
+					Rating:<br>
+					<input type="text" placeholder="Rating..."/><br>
+					<br>
+				</form>
+			</div>
 		</div>
-		
 	</div>
-	
 	
 </div>
 </body>
