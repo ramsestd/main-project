@@ -1,8 +1,17 @@
 <html>
 <head>
-	 <title></title>
-	 <link rel="stylesheet" type="text/css" href="assets/css/appstyles.css">
-	 <link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/appstyles.css">
+	<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="javascript/jquery-1.11.3.js"></script>
+	<script>
+		$(document).ready(function(){
+    		$("button").click(function(){
+        		$("p").slideToggle();
+    		});
+    	});	
+		</script>
 </head>
 <body>
 
@@ -23,9 +32,16 @@
 	</div>
 
 	<div class="resultsBox">
+
 		<div class="search-results">
+			<section class="round-border">
+			<p><a href="http://www.imdb.com/">www.imdb.com</a></p>
+			<button>Click to Access IMDB</button>
+			</section>
+			
 		<!-- movie listings -->
 			<div class="search-head wb-bottom">
+				<p>Movie Posters</p>
 				<button class="wb">Movie </button>
 				<button class="wb">Movie </button>
 				<button class="wb">Movie </button>
@@ -36,8 +52,10 @@
 				<button class="wb">Movie </button>
 				<button class="wb">Movie </button>
 			</div>
-		
 		</div>
+	</div>
+		<div class="black-bar wb-bottom">
+	
 	</div>	
 </div>
 </body>

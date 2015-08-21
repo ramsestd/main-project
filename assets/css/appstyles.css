@@ -38,9 +38,9 @@
 }
 
 /*preventing certain elements from using their default border/bg styles*/
-form, input, textarea, table, button, select, optgroup, option {
+/*form, input, textarea, table, button, select, optgroup, option {
 	font: inherit; color: inherit; background: transparent;
-}
+}*/
 
 /*general styles*/
 body {
@@ -49,11 +49,11 @@ body {
 }
 
 a {
-	text-decoration: none; color: white;
+	text-decoration: none; color: black;
 }
 
 .wrapper {
-	width: 320px; 
+	width: 400px; 
 	display: block; 
 	margin: 50px auto; 
 	border-bottom-width: 0; 
@@ -70,6 +70,7 @@ a {
 	padding: 5px; 
 	font-size: 25px; 
 	text-align: center;
+	float: right;
 }
 
 .title-box {
@@ -85,8 +86,8 @@ a {
 }
 
 .input {
-	width: 30px; 
-	height: 10px;
+	width: 50px; 
+	height: 30px;
 }
 
 .categories {
@@ -104,7 +105,7 @@ a {
 }
 
 .search-head {
-	padding: 50px; 
+	padding: 20px 40px 40px 40px; 
 	background: rgba(0, 0, 0, 0.2);
 }
 
@@ -127,7 +128,7 @@ a {
 
 .resultsBox {
 
-	max-width: 320px;
+	max-width: 400px;
 	max-height: 900px;
 	background-color: #fff;
 }
@@ -150,8 +151,64 @@ a {
 .img {
 	margin-top: 8px; 
 	padding: 0px;
+	float: absolute;
 }
 
 .button {
 	width: 20px;
+	border-radius: 20px;
+	color: black;
+}
+
+.button2 {
+	display: block;
+    text-align: center;
+	border: 2px solid #eee;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+p {
+	color: black;
+	text-align: center;
+	padding-bottom: 7px;
+	font-size: 20px;
+}
+
+p a {
+	color: black;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 2px;
+	font-size: 15px;
+
+}
+
+.round-border {
+	display: block;
+    text-align: center;
+	border: 2px solid #eee;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #195493;
+    border: solid 1px #c3c3c3;
+    color: 
+}
+
+#panel {
+    padding: 10px;
+    display: none;
 }
