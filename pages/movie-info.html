@@ -2,15 +2,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/appstyles.css">
-	<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css">
-	<script type="text/javascript" src="../javascript/jquery-1.11.3.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-    	$("#flip").click(function(){
-        	$("#panel").slideDown("slow");
-    	});
-	});
-	</script>
+<!-- 	<link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.css"> -->
 </head>
 <body>
 
@@ -26,7 +18,7 @@
 	</div>
 	
 	<div class="categories wb-bottom">
-		<a href="../pages/movie-info.html" class="wb-right">New Search</a>
+		<a class="chosen" href="../pages/movie-info.html" class="wb-right">New Search</a>
 		<a href="../pages/barcode-info.html">Scan Barcode</a>
 	</div>
 	
@@ -60,5 +52,30 @@
 	
 	</div>
 </div>
+<script type="text/javascript" src="../javascript/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+    	$("#flip").click(function(){
+        	$("#panel").slideToggle("slow");
+    	});
+
+    	$("p").hover(function(){
+        	$(this).css("background-color", "white");
+        	}, function(){
+        	$(this).css("background-color", "#195493");
+    	});
+
+    	$('p').click(function(){
+  			$(this).toggleClass("highlight");
+		});
+
+		var links = $('#link a');
+		$('#link').on('click', 'a', function(e) {
+  			e.preventDefault();
+  			$(links).removeClass('chosen');
+  			$(this).addClass('chosen');
+		});
+	});
+	</script>
 </body>
 </html>

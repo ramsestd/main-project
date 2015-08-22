@@ -53,7 +53,8 @@ a {
 }
 
 .wrapper {
-	width: 400px; 
+	width: 400px;
+	max-height: 700px;
 	display: block; 
 	margin: 50px auto; 
 	border-bottom-width: 0; 
@@ -212,3 +213,26 @@ p a {
     padding: 10px;
     display: none;
 }
+
+.highlight {
+	background-color: #195493;
+}
+
+.linkheader {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #4F5A5E;  /* grey color */ 
+    text-decoration: none;
+}
+
+.linkheaderselected {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: gold;
+    text-decoration: none;
+}
+.chosen {
+	color: #000000;
+	background-color: purple;
+}
+
