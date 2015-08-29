@@ -1,0 +1,11 @@
+Barcode Scanner Plugin
+
+success and fail are callback functions. Success is passed an object with data, type and cancelled properties. Data is the text representation of the barcode data, type is the type of barcode detected and cancelled is whether or not the user cancelled the scan.
+
+
+
+Description": "You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.",
+
+    /**     * Scans image via device camera and retieves barcode from it.     * @param  {function} success Success callback     * @param  {function} fail    Error callback     * @param  {array} args       Arguments array     */
+/**     * Encodes specified data into barcode     * @param  {function} success Success callback     * @param  {function} fail    Error callback     * @param  {array} args       Arguments array     */
+  /**         * Creates a preview frame and necessary objects         */
