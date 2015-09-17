@@ -1,3 +1,23 @@
+/*Responsive Media Queries*/
+/* Portrait */
+@media  screen
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  		.wrapper {
+			width: 300px;
+			max-height: 700px;
+			display: block; 
+			margin: 50px auto; 
+			border-bottom-width: 0; 
+			background-color: 195493
+			}	
+	}
+
+
+
+
 /*3 custom fonts(handwriting style)*/
 @import url('http://fonts.googleapis.com/css?family=Delius|Walter+Turncoat|Permanent+Marker');
 
