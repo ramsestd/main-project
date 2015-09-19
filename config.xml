@@ -17,6 +17,7 @@
         Steve Arrieta
     </author>
 
-    <gap:plugin name="com.manateeworks.barcodescanner" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner.BarcodeScanner" version="4.0.2" />
+
 
 </widget>
